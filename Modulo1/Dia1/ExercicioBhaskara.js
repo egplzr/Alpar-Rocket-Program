@@ -14,8 +14,8 @@ function bhaskara (a, b, c){
 
 
 //Definindo valores para equação x^2 - 5x + 6 = 0;
-const a = 1;
-const b = -5;
-const c = 6;
+const a = 2;
+const b = 3;
+const c = -5;
 
 bhaskara(a, b, c);
