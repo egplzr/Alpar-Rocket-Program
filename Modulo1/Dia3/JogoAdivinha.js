@@ -1,11 +1,15 @@
 const prompt = require('prompt-sync')();
 
-const numeroAleatorio = Math.round(Math.random() * 100);
-let nTentativas = 6;
+let gerarNumero = () => Math.round(Math.random() * 100);
+
+let nTentativas = 0;
 let tentativa;
+
+const numeroAleatorio = gerarNumero();
 
 do {
     
+
     tentativa = Number(prompt('Adivinhe o número entre 0 e 100: '));
     
     if (tentativa > numeroAleatorio){

@@ -1,19 +1,10 @@
-const precoProduto = 50.65;
+const precoProduto = 100;
 
 const desconto = true;
 
-
 const icms = Math.random() * (25 - 12) + 12;
 
-function calcularDesconto(precoProduto){
-    if (desconto) {
-        return precoProduto - (precoProduto * 0.1);
-    } else {
-        return precoProduto;
-    }
-}
-
-const precoComDesconto = calcularDesconto(precoProduto);
+const precoComDesconto = desconto ? precoProduto - (precoProduto * 0.1) : precoProduto;
 
 const precoIcms = precoComDesconto * (icms/100);
 

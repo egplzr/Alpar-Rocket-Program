@@ -1,9 +1,12 @@
 const prompt = require('prompt-sync')();
 
 let pontos = 100;
+let dado;
+
+let rolarDados = () => Math.floor(Math.random() * 6) + 1;
 
 for (let i = 0; i < 20; i++) {
-    const dado = Math.floor(Math.random() * 6) + 1;
+    dado = rolarDados();
     let mensagem = '';
 
     prompt(`
@@ -48,7 +51,8 @@ for (let i = 0; i < 20; i++) {
         RESULTADOS:
 
         Número rolado: ${dado};
-        ${mensagem}`)
+        ${mensagem}
+        `);
 
 }
 
