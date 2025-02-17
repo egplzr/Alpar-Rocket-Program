@@ -1,0 +1,16 @@
+{
+  "name": "dia5",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "Animal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Enzo Pelizaro",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
